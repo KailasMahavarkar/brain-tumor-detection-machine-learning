@@ -1,4 +1,4 @@
-# ResumeScannerML
+# Brain Tumor Detection using CNN
 #### btDetection is created as 3rd year mini project
 
 ### ML model used
