@@ -1,16 +1,11 @@
 # ResumeScannerML
-#### ResumeScannerML can scan any individual resume and display a graphical pie-chart telling which section of IT that resume reflects (like web developer, java developer, system administrator etc.)
-
-#### ResumeScannerML can also be used to rank Candidate Resumes i.e based upon your company requirements(text), our Machine Learning model will rank and determine first 50 most suitable candidates for Recruitment process.
-
-#### ResumeScannerML is an Inhouse Internship Project made by 3rd-year students of VIT
+#### btDetection is created as 3rd year mini project
 
 ### ML model used
- - [x] Stacked Model Implementation (KNN + SVM + XGBOOST)
+ - [x] CNN + Deep learning
  
 ### Project Implementation
- - [x] *SCAN your resume to fetch rank*
- - [x] *Fetch List of resume that match your requirements*
+ - [x] *SCAN MRI images and predict brain tumor probability*
 
 ### Tech Stack Used
  - [x] ReactJS on frontend
