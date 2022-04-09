@@ -1,13 +1,9 @@
 import numpy as np
-import wikipedia
 from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import GridSearchCV
 from keras.models import Sequential,Model,model_from_json
 from keras.layers import Conv2D,MaxPooling2D,Dense,Dropout,Flatten
 from keras.preprocessing.image import ImageDataGenerator
-from PIL import Image
-import glob
-import keras
 from keras.applications import vgg16
 from keras.layers import Input
 import matplotlib.pyplot as plt

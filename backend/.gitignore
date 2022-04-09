@@ -3,9 +3,11 @@
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
+venv
 *.py[cod]
 *$py.class
 
+tensorflow-1.9.0-cp37-cp37m-win_amd64.whl
 # C extensions
 *.so
 
