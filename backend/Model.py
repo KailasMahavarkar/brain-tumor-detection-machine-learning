@@ -1,16 +1,10 @@
 import numpy as np
-from sklearn.model_selection import cross_val_score
-from sklearn.model_selection import GridSearchCV
-from keras.models import Sequential,Model,model_from_json
-from keras.layers import Conv2D,MaxPooling2D,Dense,Dropout,Flatten
-from keras.preprocessing.image import ImageDataGenerator
-from keras.applications import vgg16
-from keras.layers import Input
-import matplotlib.pyplot as plt
+from keras.models import model_from_json
 import env
 import os
 import cv2
 from contextlib import suppress
+from Cleaner import ModelPredictor_
 
 import tensorflow as tf
 
@@ -37,7 +31,7 @@ def ModelPredictor(img: any) -> float:
         loaded_model.compile(loss='binary_crossentropy', optimizer='rmsprop', metrics=['accuracy'])
         
         predicted_result = (loaded_model.predict(img) > 0.5).astype("int32")
-        return float(predicted_result[0][0])
+        return predicted_result
     return float(-1)
 
 

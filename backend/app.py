@@ -24,6 +24,7 @@ def runREQ():
             
             modelResult = ModelPredictor(img=img)
             
+            
             if modelResult != -1:
                 return jsonify({
                     "msg": "model prediction was success",

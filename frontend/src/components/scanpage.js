@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Upload from "rc-upload";
 import Loader from "react-loader-spinner";
-import { PIECOLORS, url } from "../helper";
+import {  url } from "../helper";
 
 const Scanpage = () => {
 	const [data, setData] = useState();
@@ -14,11 +14,13 @@ const Scanpage = () => {
 		multiple: false,
 		onStart(file) {
 			setRunning(true);
-			console.log("onStart", file);
+            setData({
+                prediction: 0,
+				msg: ""
+            })
 		},
 		onSuccess(result) {
 			setRunning(false);
-
 			setData({
 				prediction: result?.prediction,
 				msg: result?.msg,
@@ -54,7 +56,7 @@ const Scanpage = () => {
 					<div className="upload_container">
 						<Upload {...uploadProps}>
 							<button className="custom-file-upload">
-								Upload Your Resume
+                                Scan File
 							</button>
 						</Upload>
 					</div>
